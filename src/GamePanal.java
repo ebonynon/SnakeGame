@@ -191,13 +191,16 @@ public class GamePanal extends JPanel implements ActionListener{
 		@Override
 		public void keyPressed(KeyEvent e) {
 			
-			System.out.println("Key Press	: " + e.getKeyCode());
+			
+			int run = e.getKeyCode();
+			
+/*			System.out.println("Key Press	: " + e.getKeyCode());
 			System.out.println("KeyEvent.VK_LEFT	: " + KeyEvent.VK_LEFT);
 			System.out.println("KeyEvent.VK_RIGHT	: " + KeyEvent.VK_RIGHT);
 			System.out.println("KeyEvent.VK_UP	: " + KeyEvent.VK_UP);
 			System.out.println("KeyEvent.VK_DOWN	: " + KeyEvent.VK_DOWN);
-			
-			switch(e.getKeyCode()) {
+*/			
+			switch(run) {
 			case KeyEvent.VK_LEFT:
 				if (direction != 'R') {
 					direction = 'L';
